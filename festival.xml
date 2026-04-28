@@ -2,70 +2,62 @@
 <!DOCTYPE festival SYSTEM "festival.dtd">
 <festival>
     <nombre>Festival Tech del Futuro</nombre>
-    <ciudad>Gijon</ciudad>
+    <ciudad>Gijón</ciudad>
     <fecha>15 de junio de 2026</fecha>
     <horario>10:00 – 20:00 h</horario>
-    <ubicacion>Palacio de Congresos de Gijón</ubicacion>
-    <direccion>Av. de la Costa, 33, Gijón</direccion>
-    <descripcion>Robótica · Videojuegos · IA · VR · Programación</descripcion>
-    
+    <lugar>Palacio de Congresos de Gijón — Av. de la Costa, 33</lugar>
+    <imagen>/img/banner.png</imagen>
+    <descripcion>Explora el mañana hoy: un evento único donde la IA, la robótica y la programación cobran vida. Ven a vivir la experiencia definitiva en videojuegos y realidad virtual en un festival avalado por el Ayuntamiento para los creadores del futuro.</descripcion>
+    <actividades>
+        <actividad id="a1" tipo="robotica">
+            <titulo>Batalla de Robots</titulo>
+            <descripcion>Competición de robots diseñados y programados por estudiantes. Los equipos se enfrentan en un torneo por eliminar al rival con sus creaciones. Aprenderás electrónica, mecánica y lógica de control mientras te diviertes.</descripcion>
+            <sala>Sala Dragón — Planta Baja</sala>
+            <hora>10:00 – 12:00</hora>
+            <precio>Gratis</precio>
+            <imagen>/img/robotica.svg</imagen>
+            <icono>🤖</icono>
+        </actividad>
+        <actividad id="a2" tipo="videojuegos">
+            <titulo>Torneo Gaming Retro &amp; Next-Gen</titulo>
+            <descripcion>Competición multijugador que mezcla clásicos de los 80-90 con los títulos más punteros del año. Categorías para todas las edades y niveles. Premios para los tres primeros clasificados de cada categoría.</descripcion>
+            <sala>Sala Píxel — Primera Planta</sala>
+            <hora>12:00 – 14:00</hora>
+            <precio>3 €</precio>
+            <imagen>/img/videojuegos.svg</imagen>
+            <icono>🎮</icono>
+        </actividad>
+        <actividad id="a3" tipo="ia">
+            <titulo>Taller de Inteligencia Artificial</titulo>
+            <descripcion>Crea tu propio chatbot paso a paso. Aprenderás qué es el machine learning, cómo se entrena un modelo y cómo integrarlo en una aplicación web. No se necesitan conocimientos previos de programación.</descripcion>
+            <sala>Sala Neurona — Primera Planta</sala>
+            <hora>14:00 – 16:00</hora>
+            <precio>5 €</precio>
+            <imagen>/img/ia.svg</imagen>
+            <icono>🧠</icono>
+        </actividad>
+        <actividad id="a4" tipo="realidad_virtual">
+            <titulo>Experiencia Realidad Virtual</titulo>
+            <descripcion>Sumérgete en mundos virtuales con las últimas gafas de VR. Explora entornos inmersivos, prueba videojuegos en 360° y descubre cómo la RV se aplica en medicina, arquitectura y educación. Sesiones de 20 minutos.</descripcion>
+            <sala>Sala Matrix — Segunda Planta</sala>
+            <hora>16:00 – 18:00</hora>
+            <precio>5 €</precio>
+            <imagen>/img/vr.svg</imagen>
+            <icono>🥽</icono>
+        </actividad>
+        <actividad id="a5" tipo="programacion">
+            <titulo>Taller de Programación Web</titulo>
+            <descripcion>Construye tu primera página web desde cero usando HTML, CSS y JavaScript. Al finalizar el taller cada participante se llevará su propio proyecto publicado en línea. Material y portátiles proporcionados por la organización.</descripcion>
+            <sala>Sala Código — Segunda Planta</sala>
+            <hora>18:00 – 20:00</hora>
+            <precio>Gratis</precio>
+            <imagen>/img/programacion.svg</imagen>
+            <icono>💻</icono>
+        </actividad>
+    </actividades>
     <contacto>
         <telefono>985 123 456</telefono>
         <whatsapp>600 123 456</whatsapp>
         <email>info@festivaltechdelfuturo.com</email>
     </contacto>
-
-    <actividades>
-
-        <actividad id="1" categoria="Robótica">
-            <icono>🤖</icono>
-            <titulo>Batalla de Robots</titulo>
-            <descripcion>Competición de robots diseñados y programados por estudiantes. Los equipos se enfrentan en un torneo por eliminar al rival con sus creaciones. Aprenderás electrónica, mecánica y lógica de control mientras te diviertes.</descripcion>
-            <imagen>img/robotica.svg</imagen>
-            <itinerario>10:00 – 12:00 h</itinerario>
-            <sala>Sala Dragón</sala>
-            <precio>Gratis</precio>
-        </actividad>
-
-        <actividad id="2" categoria="Videojuegos">
-            <icono>🎮</icono>
-            <titulo>Torneo Gaming Retro</titulo>
-            <descripcion>Competición multijugador que mezcla clásicos de los 80-90 con los títulos más punteros del año. Categorías para todas las edades y niveles. Premios para los tres primeros clasificados de cada categoría.</descripcion>
-            <imagen>img/videojuegos.svg</imagen>
-            <itinerario>12:00 – 14:00 h</itinerario>
-            <sala>Sala Píxel</sala>
-            <precio>3 €</precio>
-        </actividad>
-        
-        <actividad id="3" categoria="IA">
-            <icono>🧠</icono>
-            <titulo>Taller de Inteligencia Artificial</titulo>
-            <descripcion>Crea tu propio chatbot paso a paso. Aprenderás qué es el machine learning, cómo se entrena un modelo y cómo integrarlo en una aplicación web. No se necesitan conocimientos previos de programación.</descripcion>
-            <imagen>img/ia.svg</imagen>
-            <itinerario>14:00 – 16:00 h</itinerario>
-            <sala>Sala Neurona</sala>
-            <precio>5 €</precio>
-        </actividad>
-
-        <actividad id="4" categoria="VR">
-            <icono>🕶️</icono>
-            <titulo>Experiencia Realidad Virtual</titulo>
-            <descripcion>Sumérgete en mundos virtuales con las últimas gafas de VR. Explora entornos inmersivos, prueba videojuegos en 360° y descubre cómo la RV se aplica en medicina, arquitectura y educación. Sesiones de 20 minutos.</descripcion>
-            <imagen>img/vr.svg</imagen>
-            <itinerario>16:00 – 18:00 h</itinerario>
-            <sala>Sala Matrix</sala>
-            <precio>5 €</precio>
-        </actividad>
-
-        <actividad id="5" categoria="Programación">
-            <icono>💻</icono>
-            <titulo>Taller de Programación Web</titulo>
-            <descripcion>Construye tu primera página web desde cero usando HTML, CSS y JavaScript. Al finalizar el taller cada participante se llevará su propio proyecto publicado en línea. Material y portátiles proporcionados por la organización.</descripcion>
-            <imagen>img/programacion.svg</imagen>
-            <itinerario>18:00 – 20:00 h</itinerario>
-            <sala>Sala Código</sala>
-            <precio>Gratis</precio>
-        </actividad>
-
-    </actividades>
 </festival>

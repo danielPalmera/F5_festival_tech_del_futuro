@@ -263,6 +263,7 @@ ul, ol { list-style: none; }
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   margin-bottom: 2.25rem;
   letter-spacing: .04em;
+  margin-top: 2.25rem;
 }
 
 .hero-actions {

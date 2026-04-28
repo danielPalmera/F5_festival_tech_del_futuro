@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Festival Tech del Futuro — El evento tecnológico para jóvenes más importante del norte de España. Robótica, videojuegos, IA, VR y programación." />
   <title></title>
-  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="/estilos.css" />
 </head>
 <body>
 
@@ -13,8 +13,7 @@
   <header class="site-header" id="top">
     <div class="header-inner">
       <a class="logo" href="#top">
-        <span class="logo-icon">⚡</span>
-        <span class="logo-text">Festival<strong>Tech</strong></span>
+        <span class="logo-text" id="logo-name"></span>
       </a>
 
       <button class="nav-toggle" id="navToggle">
@@ -39,6 +38,7 @@
       <div class="hero-content">
         <p class="hero-pretitle" id="hero-pretitle"></p>
         <h1 id="heroTitle"></h1>
+        <div id="imagen"></div>
         <p class="hero-subtitle"></p>
         <div class="hero-actions">
           <a href="#actividades" class="btn btn-primary">Ver actividades</a>
@@ -58,7 +58,20 @@
           <h2 id="actividadesTitle">Actividades</h2>
           <p>Elige tu aventura tecnológica. Haz clic en una actividad para ver la ficha completa.</p>
         </header>
-        <ul class="activity-list" id="activity-list" role="list"></ul>
+
+        <ul class="activity-list" id="activity-list" role="list">
+          <!--
+            plantilla de item de actividad para el índice (repetir por cada actividad del XML)
+            <a href="#a1" data-tipo="robotica" class="activity-link">
+              <span class="activity-icon">🤖</span>
+              <div>
+                <strong>Batalla de Robots</strong>
+                <span class="activity-meta">Sala Dragón — Planta Baja · 10:00 – 12:00 · Gratis</span>
+              </div>
+              <span class="arrow">→</span>
+            </a>
+          -->
+        </ul>
       </div>
     </section>
     <!-- ========== ACTIVITY CARDS / FICHES ========== -->
@@ -72,6 +85,7 @@
         <div class="cards-grid" id="cardsGrid">
 
           <!--
+          plantilla de ficha de actividad (repetir por cada actividad del XML)
           <article class="card" id="a1" data-tipo="robotica">
             <figure class="card-img">
               <img src="img/robotica.svg" alt="" loading="lazy" />
@@ -191,7 +205,7 @@
   <!-- ========== FOOTER ========== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="footer-logo">⚡ Festival<strong>Tech</strong> del Futuro 2026</p>
+      <p class="footer-logo" id="footer-name"></p>
       <p class="footer-copy">Organizado por el Ayuntamiento de Gijón · <a href="mailto:info@festivaltechdelfuturo.com">info@festivaltechdelfuturo.com</a></p>
       <nav class="footer-nav">
         <a href="#inicio">Inicio</a>
@@ -203,7 +217,7 @@
 
   <a href="#top" class="back-to-top" id="backToTop">↑</a>
 
-  <script src="script.js"></script>
-  <script src="xml_parser.js"></script>
+  <script src="/script.js"></script>
+  <script src="/xml_parser.js"></script>
 </body>
 </html>

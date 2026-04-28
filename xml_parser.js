@@ -1,4 +1,4 @@
-var xmlPath = './festival.xml';
+var xmlPath = '/festival.xml';
 
 fetch(xmlPath)
   .then(function (response) {
@@ -16,9 +16,22 @@ fetch(xmlPath)
 
     let heroPretitle = document.getElementById('hero-pretitle');
     let heroTitle = document.getElementById('heroTitle');
+    let footerName = document.getElementById('footer-name');
+    let logoName = document.getElementById('logo-name');
+    
     let heroSubtitle = document.querySelector('.hero-subtitle');
     let heroLocation = document.getElementById('heroLocation');
     let heroTime = document.getElementById('heroTime');
+
+    let imagen = Festival.querySelector('imagen').textContent.trim();
+
+    let heroImage = document.getElementById('imagen');
+    let donimg = document.createElement('img');
+
+    donimg.setAttribute('src', imagen);
+    donimg.setAttribute('alt', Festival.querySelector('nombre').textContent.trim());    
+    heroImage.appendChild(donimg);
+
 
     let nombreFestival = Festival.querySelector('nombre').textContent.trim();
     let ciudad = Festival.querySelector('ciudad').textContent.trim();
@@ -39,6 +52,8 @@ fetch(xmlPath)
 
     heroPretitle.textContent = ciudad + ' · ' + fecha;
     heroTitle.textContent = nombreFestival;
+    footerName.textContent = '⚡ ' + nombreFestival;
+    logoName.textContent = '⚡ ' + nombreFestival;
     heroSubtitle.textContent = descripcion;
 
     window.festivalXmlDoc = xmlDoc;
@@ -57,7 +72,7 @@ fetch(xmlPath)
         var titulo = actividad.querySelector('titulo').textContent.trim();
         var descripcion = actividad.querySelector('descripcion').textContent.trim();
         var sala = actividad.querySelector('sala').textContent.trim();
-        var itinerario = actividad.querySelector('itinerario').textContent.trim();
+        var hora = actividad.querySelector('hora').textContent.trim();
         var precio = actividad.querySelector('precio').textContent.trim();
         var imagen = actividad.querySelector('imagen').textContent.trim();
         var icono = actividad.querySelector('icono').textContent.trim();
@@ -80,7 +95,7 @@ fetch(xmlPath)
         
         let spanActivityMeta = document.createElement('span');
         spanActivityMeta.classList.add('activity-meta');
-        spanActivityMeta.textContent = sala + ' · ' + itinerario + ' · ' + precio;
+        spanActivityMeta.textContent = sala + ' · ' + hora + ' · ' + precio;
 
         let spanFlecha = document.createElement('span');
         spanFlecha.classList.add('arrow');
@@ -157,7 +172,7 @@ fetch(xmlPath)
         dtSala2.textContent = '🕙 Horario'
 
         let ddSala2 = document.createElement('dd')
-        ddSala2.textContent = itinerario
+        ddSala2.textContent = hora
 
         
 
@@ -199,7 +214,7 @@ fetch(xmlPath)
 
     var ubicacion= document.getElementById('ubicacion').innerText= direccion;
     var fechaTiempo= document.getElementById('fechaTiempo').innerText= fecha + ' · ' + horario;
-
+    
     var telefonoEl = document.getElementById('telefono');
     var whatsappEl = document.getElementById('whatsapp');
     var emailEl = document.getElementById('emailContacto');
