@@ -18,15 +18,15 @@
   /* ---------- Mobile nav toggle ---------- */
   if (navToggle && mainNav) {
     navToggle.addEventListener('click', function () {
-      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', String(!expanded));
+      const expanded = mainNav.classList.contains('open');
+      navToggle.classList.toggle('is-open', !expanded);
       mainNav.classList.toggle('open', !expanded);
     });
 
     /* Close nav when a link is clicked */
     navLinks.forEach(function (link) {
       link.addEventListener('click', function () {
-        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.classList.remove('is-open');
         mainNav.classList.remove('open');
       });
     });
@@ -34,7 +34,7 @@
     /* Close nav on outside click */
     document.addEventListener('click', function (e) {
       if (!mainNav.contains(e.target) && !navToggle.contains(e.target)) {
-        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.classList.remove('is-open');
         mainNav.classList.remove('open');
       }
     });
@@ -154,7 +154,7 @@
   /* ---------- Keyboard accessibility: close nav with Escape ---------- */
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && mainNav && mainNav.classList.contains('open')) {
-      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.classList.remove('is-open');
       mainNav.classList.remove('open');
       navToggle.focus();
     }
