@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#001a00"/>
+      <stop offset="100%" style="stop-color:#001a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg)"/>
+  <!-- laptop screen -->
+  <rect x="90" y="55" width="220" height="140" rx="8" fill="#111" stroke="#22c55e" stroke-width="2"/>
+  <!-- screen content - code lines -->
+  <rect x="105" y="72" width="60" height="7" rx="3" fill="#a855f7" opacity="0.9"/>
+  <rect x="115" y="88" width="100" height="7" rx="3" fill="#22c55e" opacity="0.9"/>
+  <rect x="125" y="104" width="80" height="7" rx="3" fill="#22c55e" opacity="0.7"/>
+  <rect x="135" y="120" width="110" height="7" rx="3" fill="#f59e0b" opacity="0.9"/>
+  <rect x="125" y="136" width="80" height="7" rx="3" fill="#22c55e" opacity="0.7"/>
+  <rect x="115" y="152" width="40" height="7" rx="3" fill="#a855f7" opacity="0.9"/>
+  <!-- cursor blink -->
+  <rect x="160" y="152" width="3" height="12" fill="#22c55e" opacity="0.9"/>
+  <!-- laptop base -->
+  <rect x="70" y="195" width="260" height="12" rx="4" fill="#1a1a1a" stroke="#22c55e" stroke-width="1"/>
+  <text x="200" y="225" font-family="Arial" font-size="13" fill="#aaa" text-anchor="middle">Programación</text>
+</svg>
