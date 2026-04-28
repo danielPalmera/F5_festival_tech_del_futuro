@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Festival Tech del Futuro — El evento tecnológico para jóvenes más importante del norte de España. Robótica, videojuegos, IA, VR y programación." />
+  <title>Festival Tech del Futuro 2026</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="Inicio">
+        <span class="logo-icon" aria-hidden="true">⚡</span>
+        <span class="logo-text">Festival<strong>Tech</strong></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Menú principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+          <li><a href="#fichas">Fichas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO BANNER ========== -->
+    <section class="hero" id="inicio" aria-labelledby="heroTitle">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-pretitle">Gijón · 15 de junio de 2026</p>
+        <h1 id="heroTitle">Festival Tech<br /><span class="accent">del Futuro</span></h1>
+        <p class="hero-subtitle">Robótica · Videojuegos · IA · Realidad Virtual · Programación</p>
+        <div class="hero-actions">
+          <a href="#actividades" class="btn btn-primary">Ver actividades</a>
+          <a href="#contacto" class="btn btn-outline">Inscríbete</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Palacio de Congresos de Gijón</span>
+          <span>🕙 10:00 – 20:00 h</span>
+          <span>🎟️ Entrada desde gratis</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ACTIVITIES LIST (anchor index) ========== -->
+    <section class="activities-index" id="actividades" aria-labelledby="actividadesTitle">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="actividadesTitle">Actividades</h2>
+          <p>Elige tu aventura tecnológica. Haz clic en una actividad para ver la ficha completa.</p>
+        </header>
+
+        <ul class="activity-list" role="list">
+          <li>
+            <a href="#a1" class="activity-link" data-tipo="robotica">
+              <span class="activity-icon" aria-hidden="true">🤖</span>
+              <div>
+                <strong>Batalla de Robots</strong>
+                <span class="activity-meta">10:00 – 12:00 · Sala Dragón · Gratis</span>
+              </div>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#a2" class="activity-link" data-tipo="videojuegos">
+              <span class="activity-icon" aria-hidden="true">🎮</span>
+              <div>
+                <strong>Torneo Gaming Retro &amp; Next-Gen</strong>
+                <span class="activity-meta">12:00 – 14:00 · Sala Píxel · 3 €</span>
+              </div>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#a3" class="activity-link" data-tipo="ia">
+              <span class="activity-icon" aria-hidden="true">🧠</span>
+              <div>
+                <strong>Taller de Inteligencia Artificial</strong>
+                <span class="activity-meta">14:00 – 16:00 · Sala Neurona · 5 €</span>
+              </div>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#a4" class="activity-link" data-tipo="realidad_virtual">
+              <span class="activity-icon" aria-hidden="true">🥽</span>
+              <div>
+                <strong>Experiencia Realidad Virtual</strong>
+                <span class="activity-meta">16:00 – 18:00 · Sala Matrix · 5 €</span>
+              </div>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="#a5" class="activity-link" data-tipo="programacion">
+              <span class="activity-icon" aria-hidden="true">💻</span>
+              <div>
+                <strong>Taller de Programación Web</strong>
+                <span class="activity-meta">18:00 – 20:00 · Sala Código · Gratis</span>
+              </div>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== ACTIVITY CARDS / FICHES ========== -->
+    <section class="activity-cards" id="fichas" aria-labelledby="fichasTitle">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="fichasTitle">Fichas de actividades</h2>
+          <p>Toda la información detallada de cada evento del festival.</p>
+        </header>
+
+        <div class="cards-grid">
+
+          <!-- CARD 1 -->
+          <article class="card" id="a1" data-tipo="robotica" aria-labelledby="titulo-a1">
+            <figure class="card-img">
+              <img src="img/robotica.svg" alt="Ilustración de un robot compitiendo en la batalla de robots" loading="lazy" />
+              <figcaption class="card-badge">Robótica</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3 id="titulo-a1" class="card-title">Batalla de Robots</h3>
+              <p class="card-desc">Competición de robots diseñados y programados por estudiantes. Los equipos se enfrentan en un torneo por eliminar al rival con sus creaciones. Aprenderás electrónica, mecánica y lógica de control mientras te diviertes.</p>
+              <dl class="card-details">
+                <div class="card-detail">
+                  <dt>🏛️ Sala</dt>
+                  <dd>Sala Dragón — Planta Baja</dd>
+                </div>
+                <div class="card-detail">
+                  <dt>🕙 Horario</dt>
+                  <dd>10:00 – 12:00 h</dd>
+                </div>
+                <div class="card-detail">
+                  <dt>🎟️ Precio</dt>
+                  <dd class="price free">Gratis</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="card" id="a2" data-tipo="videojuegos" aria-labelledby="titulo-a2">
+            <figure class="card-img">
+              <img src="img/videojuegos.svg" alt="Pantalla de videojuego retro con pac-man" loading="lazy" />
+              <figcaption class="card-badge">Videojuegos</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3 id="titulo-a2" class="card-title">Torneo Gaming Retro &amp; Next-Gen</h3>
+              <p class="card-desc">Competición multijugador que mezcla clásicos de los 80-90 con los títulos más punteros del año. Categorías para todas las edades y niveles. Premios para los tres primeros clasificados de cada categoría.</p>
+              <dl class="card-details">
+                <div class="card-detail">
+                  <dt>🏛️ Sala</dt>
+                  <dd>Sala Píxel — Primera Planta</dd>
+                </div>
+                <div class="card-detail">
+                  <dt>🕛 Horario</dt>
+                  <dd>12:00 – 14:00 h</dd>
+                </div>
+                <div class="card-detail">
+                  <dt>🎟️ Precio</dt>
+                  <dd class="price">3 €</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="card" id="a3" data-tipo="ia" aria-labelledby="titulo-a3">
+            <figure class="card-img">
+              <img src="img/ia.svg" alt="Red neuronal representando la inteligencia artificial" loading="lazy" />
+              <figcaption class="card-badge">Inteligencia Artificial</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3 id="titulo-a3" class="card-title">Taller de Inteligencia Artificial</h3>
+              <p class="card-desc">Crea tu propio chatbot paso a paso. Aprenderás qué es el machine learning, cómo se entrena un modelo y cómo integrarlo en una aplicación web. No se necesitan conocimientos previos de programación.</p>
+              <dl class="card-details">
+                <div class="card-detail">
+                  <dt>🏛️ Sala</dt>
+                  <dd>Sala Neurona — Primera Planta</dd>
+                </div>
+                <div class="card-detail">
+                  <dt>🕑 Horario</dt>
+                  <dd>14:00 – 16:00 h</dd>
+                </div>
+                <div class="card-detail">
+                  <dt>🎟️ Precio</dt>
+                  <dd class="price">5 €</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <!-- CARD 4 -->
+          <article class="card" id="a4" data-tipo="realidad_virtual" aria-labelledby="titulo-a4">
+            <figure class="card-img">
+              <img src="img/vr.svg" alt="Gafas de realidad virtual en un entorno digital" loading="lazy" />
+              <figcaption class="card-badge">Realidad Virtual</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3 id="titulo-a4" class="card-title">Experiencia Realidad Virtual</h3>
+              <p class="card-desc">Sumérgete en mundos virtuales con las últimas gafas de VR. Explora entornos inmersivos, prueba videojuegos en 360° y descubre cómo la RV se aplica en medicina, arquitectura y educación. Sesiones de 20 minutos.</p>
+              <dl class="card-details">
+                <div class="card-detail">
+                  <dt>🏛️ Sala</dt>
+                  <dd>Sala Matrix — Segunda Planta</dd>
+                </div>
+                <div class="card-detail">
+                  <dt>🕓 Horario</dt>
+                  <dd>16:00 – 18:00 h</dd>
+                </div>
+                <div class="card-detail">
+                  <dt>🎟️ Precio</dt>
+                  <dd class="price">5 €</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <!-- CARD 5 -->
+          <article class="card" id="a5" data-tipo="programacion" aria-labelledby="titulo-a5">
+            <figure class="card-img">
+              <img src="img/programacion.svg" alt="Portátil con código en pantalla, taller de programación" loading="lazy" />
+              <figcaption class="card-badge">Programación</figcaption>
+            </figure>
+            <div class="card-body">
+              <h3 id="titulo-a5" class="card-title">Taller de Programación Web</h3>
+              <p class="card-desc">Construye tu primera página web desde cero usando HTML, CSS y JavaScript. Al finalizar el taller cada participante se llevará su propio proyecto publicado en línea. Material y portátiles proporcionados por la organización.</p>
+              <dl class="card-details">
+                <div class="card-detail">
+                  <dt>🏛️ Sala</dt>
+                  <dd>Sala Código — Segunda Planta</dd>
+                </div>
+                <div class="card-detail">
+                  <dt>🕕 Horario</dt>
+                  <dd>18:00 – 20:00 h</dd>
+                </div>
+                <div class="card-detail">
+                  <dt>🎟️ Precio</dt>
+                  <dd class="price free">Gratis</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+        </div><!-- /cards-grid -->
+      </div>
+    </section>
+
+    <!-- ========== CONTACT FORM ========== -->
+    <section class="contact" id="contacto" aria-labelledby="contactoTitle">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="contactoTitle">Contacto e inscripción</h2>
+          <p>¿Quieres participar o tienes alguna pregunta? Escríbenos y te respondemos en menos de 24 h.</p>
+        </header>
+
+        <div class="contact-wrapper">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Formulario de contacto e inscripción">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name" />
+                <span class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Correo electrónico <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required autocomplete="email" />
+                <span class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" placeholder="Ej. 16" min="8" max="99" />
+                <span class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="actividad">Actividad de interés <span aria-hidden="true">*</span></label>
+                <select id="actividad" name="actividad" required>
+                  <option value="">— Selecciona una —</option>
+                  <option value="a1">Batalla de Robots</option>
+                  <option value="a2">Torneo Gaming Retro &amp; Next-Gen</option>
+                  <option value="a3">Taller de Inteligencia Artificial</option>
+                  <option value="a4">Experiencia Realidad Virtual</option>
+                  <option value="a5">Taller de Programación Web</option>
+                </select>
+                <span class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje o preguntas</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí tu mensaje…"></textarea>
+            </div>
+
+            <div class="form-group form-check">
+              <input type="checkbox" id="privacidad" name="privacidad" required />
+              <label for="privacidad">He leído y acepto la <a href="#" class="inline-link">política de privacidad</a> <span aria-hidden="true">*</span></label>
+              <span class="field-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">Enviar inscripción</button>
+
+            <p class="form-success" id="formSuccess" aria-live="polite" hidden>
+              ✅ ¡Gracias! Tu inscripción ha sido enviada. Te contactaremos pronto.
+            </p>
+          </form>
+
+          <aside class="contact-info" aria-label="Información de contacto">
+            <h3>Información de contacto</h3>
+            <ul>
+              <li>
+                <span class="ci-icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>Lugar</strong>
+                  <span>Palacio de Congresos de Gijón<br />Av. de la Costa, 33, Gijón</span>
+                </div>
+              </li>
+              <li>
+                <span class="ci-icon" aria-hidden="true">📅</span>
+                <div>
+                  <strong>Fecha</strong>
+                  <span>15 de junio de 2026 · 10:00 – 20:00 h</span>
+                </div>
+              </li>
+              <li>
+                <span class="ci-icon" aria-hidden="true">📞</span>
+                <div>
+                  <strong>Teléfono</strong>
+                  <span><a href="tel:+34985123456">985 123 456</a></span>
+                </div>
+              </li>
+              <li>
+                <span class="ci-icon" aria-hidden="true">💬</span>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <span><a href="https://wa.me/34600123456">600 123 456</a></span>
+                </div>
+              </li>
+              <li>
+                <span class="ci-icon" aria-hidden="true">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <span><a href="mailto:info@festivaltechdelfuturo.com">info@festivaltechdelfuturo.com</a></span>
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">⚡ Festival<strong>Tech</strong> del Futuro 2026</p>
+      <p class="footer-copy">Organizado por el Ayuntamiento de Gijón · <a href="mailto:info@festivaltechdelfuturo.com">info@festivaltechdelfuturo.com</a></p>
+      <nav class="footer-nav" aria-label="Navegación secundaria">
+        <a href="#inicio">Inicio</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#fichas">Fichas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

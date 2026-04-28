@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d1a"/>
+      <stop offset="100%" style="stop-color:#1a0533"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg)"/>
+  <!-- screen -->
+  <rect x="80" y="50" width="240" height="150" rx="10" fill="#111" stroke="#a855f7" stroke-width="3"/>
+  <!-- scanlines -->
+  <rect x="80" y="60" width="240" height="2" fill="#a855f7" opacity="0.15"/>
+  <rect x="80" y="80" width="240" height="2" fill="#a855f7" opacity="0.15"/>
+  <rect x="80" y="100" width="240" height="2" fill="#a855f7" opacity="0.15"/>
+  <rect x="80" y="120" width="240" height="2" fill="#a855f7" opacity="0.15"/>
+  <rect x="80" y="140" width="240" height="2" fill="#a855f7" opacity="0.15"/>
+  <rect x="80" y="160" width="240" height="2" fill="#a855f7" opacity="0.15"/>
+  <rect x="80" y="180" width="240" height="2" fill="#a855f7" opacity="0.15"/>
+  <!-- pac-man like shape -->
+  <path d="M200,125 L260,95 A70,70 0 1,0 260,155 Z" fill="#f5c542"/>
+  <!-- dot -->
+  <circle cx="155" cy="125" r="6" fill="#f5c542"/>
+  <!-- controller hint -->
+  <text x="200" y="225" font-family="Arial" font-size="13" fill="#aaa" text-anchor="middle">Videojuegos</text>
+</svg>

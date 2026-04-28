@@ -1,0 +1,20 @@
+<!ELEMENT festival (nombre, ciudad, fecha, lugar, map, descripcion, actividades, contacto)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT lugar (#PCDATA)>
+<!ELEMENT map (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT actividades (actividad+)>
+<!ELEMENT actividad (titulo, descripcion, sala, horario, precio, imagen)>
+<!ATTLIST actividad id ID #REQUIRED>
+<!ATTLIST actividad tipo (robotica | videojuegos | ia | realidad_virtual | programacion) #REQUIRED>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT sala (#PCDATA)>
+<!ELEMENT horario (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT contacto (telefono, whatsapp, email)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT whatsapp (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
